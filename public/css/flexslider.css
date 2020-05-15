@@ -1,0 +1,135 @@
+.main_finding {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem 5rem;
+    gap: 3rem;
+}
+.flexslider h1 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 3em;
+    margin: 5rem 6rem 3rem 4rem;
+    color: rgb(191, 13, 13);
+}
+.flexslider {
+    width: auto;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+    max-width: 30em;
+    margin: 1em 0;
+    text-align: center;
+    box-shadow: 5px 5px 1em rgba(0, 0, 0, .5);
+    border-radius: 0.5em;
+    font-family: 'Questrial', sans-serif;
+  }
+.flexslider h2 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 0.6em 1rem ;
+}
+.flexslider h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: left;
+    margin: 0.6em 1rem;
+}
+.flexslider p {
+    font-size: 1em;
+    text-align: left;
+    margin: 0em 1em 0.8em 1em;
+    font-weight: 100;
+}
+.flexslider .price {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: red;
+    text-align: right;
+    padding-right: 1.2rem;
+
+}
+.btn_book {
+    background: red;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+  .place-picture {
+    text-align: center;
+    overflow: hidden;
+  }
+  .place-img {
+    max-width: 100%;
+  }
+  .content_button {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none; 
+    text-align: right;
+    margin: 0 1em;
+    padding: 0.3em 0em;
+  }
+  .flexslider {
+      position: relative;
+  }
+.slides {
+    overflow: hidden;
+}
+.slides, .flex-control-nav, .flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.flex-control-nav {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 40%;
+    z-index: 999;
+}
+.flex-control-nav li {
+    display: inline-block;
+    margin: 0 6px;
+}
+.flex-control-nav li a {
+    display: block;
+    background: #b9b8b8;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    text-indent: -9999px;
+}
+.flex-control-nav li a:hover {
+    background: rgb(85, 84, 84);
+}
+.flex-control-nav li a.flex-active {
+    background: rgb(85, 84, 84); 
+}
+.flex-direction-nav a {
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    width: 40px;
+    height: 60px;
+    overflow: hidden;
+}
+.flex-direction-nav .flex-prev {
+    left: 0;
+}
+.flex-direction-nav .flex-next {
+    right: 0;
+}
+.flex-direction-nav a ::before {
+    font-family: 'flexslider-icon';
+    font-size: 40px;
+    display: inline-block;
+    content: '\f001';
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0,3);
+}
+.flex-direction-nav a.flex-next ::before {
+    content: '\f002';
+}

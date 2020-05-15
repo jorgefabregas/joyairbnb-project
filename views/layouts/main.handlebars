@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <script src="https://kit.fontawesome.com/a0ac82bfd7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/flexslider.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/contact-us.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="/js/fonts/jquery.flexslider.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav_container">
+            <img src="/img/EnjoyB&B Logo-01.png" alt="JoyBnB Logo">
+            <div class="nav_menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/product/list">Find a Home</a></li>
+                    <li><a href="/user/register">Sign Up</a></li>
+                    <li><a href="/user/login">Log In</a></li>
+                    <li><a href="/product/add">Add Product</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>    
+            </div>
+            <span class="icon_menu" id="btn_menu"><i class="fas fa-bars"></i></span>
+        </div>
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+    <footer class="footer">
+        <div class="legal">
+            <h2>Company</h1>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/">Careers</a></li>
+                <li><a href="/">Mobile</a></li>
+                <li><a href="/">How we work</a></li>
+            </ul>
+        </div>
+        <img src="/img/EnjoyB&B Logo-01.png" alt="JoyB&B Logo" width="200px" height="100%">
+        <div class="contact">
+            <h2>Contact</h1>
+            <ul>
+                <li><a href="/">Help</a></li>
+                <li><a href="/contact-us">Send us an email</a></li>
+                <li><a href="/">Afiliates</a></li>
+                <li><a href="/">Partners</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/js/index.js"></script>
+    <script src="/js/slides.js"></script>
+    <script src="/models/product.js"></script>
+    <script src="/js/local-auth.js"></script>
+    <script src="/js/database.js"></script>
+    <script src="/js/keys.js"></script>
+    <script src="/js/user.js"></script>
+</body>
+</html>

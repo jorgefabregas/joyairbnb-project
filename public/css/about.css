@@ -1,0 +1,19 @@
+.banner {
+    width: 100%;
+    height: auto;
+}
+.about h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 4rem;
+}
+.about p {
+    text-align: center;
+    padding: 0 10rem 3rem 10rem;
+}
+.separator {
+    background-color: rgb(70, 68, 68);
+    height: 1px;
+    margin: 0 9rem;
+}

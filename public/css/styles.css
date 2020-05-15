@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav_container {
+    width: 100%;
+    height: auto;
+    background-color: rgb(248, 248, 244);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .35);
+}
+.nav_container img {
+    width: 100px;    
+    height: 100%;
+    padding: 0.5rem 0.5rem;
+}
+.nav_menu {
+    display: inline-block;
+}
+.nav_menu > ul {
+    display: flex;
+    list-style: none;
+    padding-top: 3rem;
+}
+.nav_menu a {
+    display: inline-block;
+    color: rgb(49, 48, 48);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    list-style: none;
+    text-decoration-line: none;
+    padding: 0 1.5rem;
+}
+.icon_menu {
+    color: rgb(49, 48, 48);
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1.7rem 1rem 0 0;
+}
+.nav {
+    position: fixed;
+    text-align: right;
+    top: 100px;
+    right: -100%;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.5s;
+}
+.nav ul {
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.menu_link {
+    display: block;
+    padding: 8px;
+    background: rgba(50, 50, 50, 0.9);
+    color: #fff;
+    height: 40px;
+    border-bottom: 1px solid white;
+    list-style: none;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+}
+.menu :hover {
+    background: #fff;
+    color: black;
+}
+.showMenu {
+    right: 0;
+}
+.main_picture {
+    background-image: url("/img/calgary_lake.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding : 3rem 3rem;
+    position: relative;
+}
+.description {
+    color: #fff;
+    font-size: 0.7rem;
+    position: relative;
+    bottom: -450px;
+}
+.booking_window {
+    font-family: 'Roboto', sans-serif;
+    max-width: 350px;
+    background-color: rgb(255, 255, 255);
+    margin: 2rem 0 0 2rem;
+}
+.booking_window  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(2, 2, 2);
+    padding: 1rem;
+    margin: 0;
+}
+.booking_window label {
+    font-weight: 600;
+    padding-bottom: 0.2rem;
+    margin: 0;
+}
+input::placeholder {
+    color: #fff !important;
+}
+.input {
+    padding: 0 2rem 0.7rem 2rem;
+}
+.input-beds {
+    padding: 0 0 0 2rem;
+    width: 100px;
+    display: inline-block;
+}
+.input-btn {
+    padding: 1rem 0 1rem 13rem;
+    margin-top: -3.3rem;
+}
+.content {
+    margin: 3rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    width: auto;
+    text-align: center;
+}
+.content-text {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1em 0;
+    padding: 0.7em 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5em;
+    background-color: darkolivegreen;
+    padding: 0.2em 0,3em;
+    color: white;
+    overflow: hidden;
+}
+.content_tittle {
+    font-family: 'Questrial', sans-serif;
+    font-size: 3em;
+    margin: 5rem 6rem 3rem 6rem;
+    color: rgb(191, 13, 13);
+}
+.online_experience h1 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin: 0.6em 1rem ;
+}
+.online_experience p {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    margin: 0em 1em 0.8em 1em;
+    font-weight: 100;
+}
+.online_experience {
+    background-color: white;
+    display: grid;
+    overflow: hidden;
+    max-width: 30em;
+    margin: 1em 0;
+    text-align: center;
+    box-shadow: 5px 5px 1em rgba(0, 0, 0, .5);
+    border-radius: 0.5em;
+    font-family: 'Questrial', sans-serif;
+}
+.place-picture {
+text-align: center;
+overflow: hidden;
+}
+.place-img {
+max-width: 100%;
+}
+.content_button {
+display: inline-block;
+font-size: 1em;
+font-weight: bold;
+text-decoration: none; 
+text-align: right;
+margin: 0 1em;
+padding: 0.3em 0em;
+}
+
+.login {
+    background-color: coral;
+}
+.login h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    padding: 2rem;
+    text-align: center;
+}
+.email {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 0 0 1rem 0;
+}
+.password {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 0 0 3rem 0;
+}
+.button {
+    background-color: crimson;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #353333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+    padding: 0.5rem 4rem;
+}
+footer h2 {
+    color: white;
+    font-size: 1.2em;
+    padding: 1em 0.8em;
+}
+footer li {
+    color: white;
+    list-style: none;
+    font-size: 0.7em;
+    padding: 1rem 1rem;
+    line-height: 0.1rem;
+    font-size: 1rem;
+}
+footer a {
+    color: white;
+    font-size: 0.7em;
+    line-height: 0.1rem;
+    font-size: 1rem;
+}
+.contact {
+    text-align: right;
+}
+
+
+
+
+
+
+
+/*@media screen and (min-width: 760px) {
+    .nav_menu ul {
+        display: none;
+    }    
+}
+
+@media screen and (min-width: 900) {
+    .icon_menu{
+        display: none;
+    }
+}*/

@@ -1,0 +1,40 @@
+.login {
+    background-image: url("/img/calgary_lake.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    padding : 3rem 3rem;
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+}
+.login-box {
+    font-family: 'Roboto', sans-serif;
+    max-width: 250px;
+    background-color: rgb(255, 255, 255);
+    margin: 2rem auto;
+}
+.login-box h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(2, 2, 2);
+    padding: 1rem;
+    margin: 0;
+}
+.login-box label {
+    font-weight: 600;
+    padding-bottom: 0.2rem;
+    margin: 0;
+}
+.input {
+    display: inline-block;
+    padding: 0 2rem 0.7rem 2rem;
+}
+.login-btn {
+    background-color: rgb(255, 0, 0);
+    padding: 0 0.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
