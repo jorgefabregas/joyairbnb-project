@@ -72,10 +72,10 @@ const generalRoutes = require("./controllers/General");
 const productRoutes = require("./controllers/Product");
 
 //MAPs EXPRESS TO ALL OUR  ROUTER OBJECTS
-app.use("/",generalRoutes);
-app.use("/user",userRoutes);
-app.use("/task",taskRoutes);
-app.use("/product",productRoutes);
+app.use("/",GeneralRoutes);
+app.use("/user",UserRoutes);
+app.use("/task",TaskRoutes);
+app.use("/product",ProductRoutes);
 app.use("/",(req,res)=>{
     res.render("General/404");
 });
