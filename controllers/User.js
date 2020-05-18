@@ -1,9 +1,8 @@
 /*********************USER ROUTES***************************/
 const express = require('express')
 const router = express.Router();
-const userModel = require("../models/user")
+const userModel = require("../models/user");
 const path = require("path");
-const bcrypt = require("bcryptjs");
 
 
 //Route to direct use to Registration form
@@ -43,10 +42,11 @@ router.post("/register",(req,res)=>
         })
         
     })
-    
-    .catch(err=>console.log(`Error while inserting into the data ${err}`));
+    .catch (err=>console.log(`Error while inserting into the data ${err}`));
 
 });
+
+
 
 //Route to direct user to the login form
 router.get("/login",(req,res)=>
@@ -57,63 +57,25 @@ router.get("/login",(req,res)=>
 //Route to process user's request and data when user submits login form
 router.post("/login",(req,res)=>
 {
-    userModel.findOne({email:req.body.email})
-    .then(user=>{
+    res.redirect("/user/profile")
+});
 
-        const errors = [];
 
-        //email not found
-        if(user==null)
-        {
-            errors.push("Sorry, your email and/or password is incorrect");
-            res.render("User/login", {
-                 errors
-            })
-        }
+router.get("/profile/:id",(req,res)=>{
 
-        //email is found 
-        else
-        {
-            bcrypt.compare(req.body.password, user.password)
-            .then(isMatched=>{
-                
-                if(isMatched)
-                {
-                    //create session
-                    req.session.userInfo = user;
-                    res.redirect("/user/profile");
-                }
+    userModel.findById(req.params.id)
+    .then((user)=>{
 
-                else
-                {
-                    errors.push("Sorry, your email and/or password is incorrect");
-                    res.render("User/login", {
-                    errors
-                })
-                }
-            })
-            .catch(err=>console.log(`Error ${err}`));
-        }
+        const {profilePic} = user;
+        
+        res.render("User/userDashboard", {
+            profilePic
+        });
+
     })
-    .catch(err=>console.log(`Error ${err}`));
-    
-});
-
-
-
-router.get("/profile",(req,res)=>{
-
-        res.render("User/userDashboard");
-   
-})
-
-router.get("/logout",(req,res)=>{
-
-    req.session.destroy();
-    res.redirect("/user/login")
+    .catch(err=>console.log(`Error :${err}`))
 
 });
-
 
 
 module.exports=router;
