@@ -65,7 +65,7 @@ app.use(session({
 })
 .catch(err=>console.log(`Error ocurred when connecting to database ${err}`));
 
-//import your router objects
+//import the router objects
 const userRoutes = require("./controllers/User");
 const taskRoutes = require("./controllers/Task");
 const generalRoutes = require("./controllers/General");
