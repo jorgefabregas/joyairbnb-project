@@ -82,7 +82,7 @@ app.use("/product",productRoutes);
 
 
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 //Creates an Express Web Server that listens for incomin HTTP Requests
 app.listen(PORT,()=>{
     console.log(`Your Web Server has been connected`);
