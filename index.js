@@ -76,9 +76,9 @@ app.use("/",generalRoutes);
 app.use("/user",userRoutes);
 app.use("/task",taskRoutes);
 app.use("/product",productRoutes);
-app.use("/",(req,res)=>{
+/*app.use("/",(req,res)=>{
     res.render("General/404");
-});
+});*/
 
 
 

@@ -1,0 +1,109 @@
+.tasks-container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 100px auto;
+    width: 800px;
+}
+.tasks-container h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.tasks-container label {
+    padding-right: 0.5rem;
+}
+.tasks-container input {
+    margin-left: 0.5rem;
+    padding: 0 4px;
+    border-radius: 10px;
+    background-color: rgb(188, 194, 194);
+}
+.tasks-container table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+.tasks-container th, td {
+    padding: 2px;
+}
+.tasks-container thead {
+    background-color: rgb(191, 13, 13);
+    color: white;
+    border-bottom: solid 5px rgb(228, 115, 115);
+    font-weight: 100;
+}
+.edit-delete-button {
+    padding: 0 6px;
+}
+#tasks-links-holder {
+    text-align: center;
+    padding-top: 2rem;
+}
+#tasks-links-holder a {
+    text-decoration: none;
+    color: rgb(191, 13, 13);
+}
+.add-tasks-container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 100px auto;
+    width: 800px;
+}
+.add-tasks-container h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.add-tasks-container form {
+    width: 600px;
+    border: solid 1px black;
+    margin: 100px auto;
+    box-sizing: border-box;
+}
+.add-tasks-container label {
+    padding: 0 2rem;
+}
+.add-tasks-container textarea {
+    padding: 7px;
+    border: solid 1px rgb(145, 143, 143);
+    max-width: 400px;
+    height: 30px;
+}
+.addtask {
+    margin-bottom: 10px;
+    margin: 0 0 10px 25px; 
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: rgb(213, 210, 210);
+}
+
+.update-tasks-container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 100px auto;
+    width: 800px;
+}
+.update-tasks-container h2 {
+    text-align: center;
+}
+.update-tasks-container form {
+    width: 800px;
+    border: solid 1px black;
+    margin: 100px auto;
+    box-sizing: border-box;
+}
+.update-tasks-container label {
+    padding: 0 2rem;
+}
+.update-tasks-container textarea {
+    padding: 7px;
+    border: solid 1px rgb(145, 143, 143);
+    max-width: 400px;
+    height: 30px;
+}
+.updatetask {
+    margin-bottom: 10px;
+    margin: 0 0 10px 25px; 
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: rgb(213, 210, 210);
+}

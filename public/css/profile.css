@@ -1,0 +1,27 @@
+.dashboard {
+    margin: 5rem auto;
+    width: 50%;
+    background-color: rgb(236, 242, 242);
+    text-align: center;
+    box-shadow: 5px 5px 1em rgba(0, 0, 0, .5);
+}
+.dashboard h2 {
+    padding: 2rem 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(191, 13, 13);
+}
+.dashboard img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+.dashboard p {
+    padding: 2rem 1rem 1rem 1rem;
+}
+.dashboard a {
+    background-color: rgb(191, 13, 13);
+    padding: 5px;
+    color: white;
+}
+.task {
+    padding-bottom: 1.5rem;
+}

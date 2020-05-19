@@ -29,7 +29,7 @@ router.post("/contact-us", (req,res)=>{
     const sgMail = require('@sendgrid/mail');
     sgMail.setApiKey(process.env.SEND_GRID_API_KEY);
     const msg = {
-    to: `fabregas.jorge@yahoo.es` `kadeem.best@humber.ca`,
+    to: `fabregas.jorge@yahoo.es`,
     from: `${eMail}`,
     subject: 'Contact Us Form Submit',
     html:

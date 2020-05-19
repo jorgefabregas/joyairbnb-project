@@ -2,16 +2,49 @@
     background-image: url("/img/calgary_lake.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     padding : 3rem 3rem;
     position: relative;
     text-align: center;
     margin-top: 3rem;
 }
-.contact-form{
-    padding: 0 2rem;
+.contact-us form{
+    width: 500px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    color: white;
 }
-.contact-box {
+.contact-us h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.contact-us input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+}
+.contact-us textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.contact-btn {
+    background: #31384a;
+    color: white;
+}
+.contact-btn :hover {
+    cursor: pointer;
+}
+/*.contact-box {
     font-family: 'Roboto', sans-serif;
     width: auto;
     background-color: rgb(255, 255, 255);
