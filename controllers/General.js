@@ -5,7 +5,7 @@ const router = express.Router();
 //Route to direct user to home page
 router.get("/",(req,res)=>
 {
-    res.render("General/index");
+    res.render("general/index");
 });
 
 
